@@ -122,6 +122,10 @@ footer li{
         display: block;
         width: initial;
     }
+    .Resto{
+        display: block;
+        width: initial;
+    }
     footer{
         display: block;
         width: initial;
@@ -141,6 +145,10 @@ footer li{
         width: initial;
     }
     #Restaurants{
+        display: block;
+        width: initial;
+    }
+    .Resto{
         display: block;
         width: initial;
     }
