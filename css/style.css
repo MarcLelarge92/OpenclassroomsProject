@@ -1,3 +1,6 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
 /* header*/
 header{
     display: flex;
@@ -12,19 +15,20 @@ header i{
 }
 /*Acceuil*/
 button{
+    height: 30px;
     border-bottom-right-radius: 15px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
     border: none;
     color: white;
-    background-color: #FF79DA;
-    height: 30px;
+    background: linear-gradient(#FF79DA,#9356DC)
 }
 /*Fonctionnement*/
 #Fonctionnement .item{
     display: flex;
-    background-color: grey;
+    background-color: white;
+    box-shadow: 0 0 6px #0000002e;;
     width: 400px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -45,6 +49,16 @@ button{
     margin-left: 29px;
     color: black;
 }
+#Fonctionnement .numbers p{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #9356DC;
+    color: white;
+    width: 19px;
+    margin-left: -6px;
+}
 #Fonctionnement a{
     display: flex;
     text-decoration: none;
@@ -55,7 +69,6 @@ button{
     width: 100%;
 }
 .Resto{
-    display: flex;
     width: 100%;
 }
 .Resto img{
@@ -78,6 +91,10 @@ button{
 .Resto i:hover{
     color: #FF79DA;
 }
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
 .content{
     background-color: white;
 }
@@ -87,6 +104,7 @@ footer{
 }
 footer h3{
     color: white;
+    margin-left: 48px;
 }
 footer ul{
     list-style-type: none;
