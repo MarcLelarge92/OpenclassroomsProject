@@ -122,6 +122,61 @@ footer li{
     margin-top: 3px;
     color: white;
 }
+/*Menu*/
+#Entrée a{
+    text-decoration: none;
+}
+#Entrée .content{
+    background-color: white;
+    box-shadow: 0 0 6px #0000002e;
+}
+#Entrée h1{
+    border-bottom: 3px solid #99E2D0;
+    width: 50px;
+}
+#Entrée h3{
+    color: black;
+}
+#Entrée p{
+    color: black;
+    margin-left: 10px;
+}
+#Plat a{
+    text-decoration: none;
+}
+#Plat h1{
+    border-bottom: 3px solid #99E2D0;
+    width: 50px;
+}
+#Plat .content{
+    background-color: white;
+    box-shadow: 0 0 6px #0000002e;
+}
+#Plat h3{
+    color: black;
+}
+#Plat p{
+    color: black;
+    margin-left: 10px;
+}
+#Dessert a{
+    text-decoration: none;
+}
+#Dessert h1{
+    border-bottom: 3px solid #99E2D0;
+    width: 50px;
+}
+#Dessert h3{
+    color: black;
+}
+#Dessert p{
+    color: black;
+    margin-left: 10px;
+}
+#Dessert .content{
+    background-color: white;
+    box-shadow: 0 0 6px #0000002e;
+}
 /*media queries*/
 /*tablettes*/
 @media all and (min-width: 768px) and (max-width: 992px){
