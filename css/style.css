@@ -128,6 +128,10 @@ footer li{
     header{
         display: block;
     }
+    header .logo{
+        width: initial;
+        margin-left: 40px;
+    }
     #Accueil{
         display: block;
         width: initial;
@@ -136,9 +140,18 @@ footer li{
         display: block;
         width: initial;
     }
+    #Fonctionnement .flex{
+        display: block;
+    }
+    #Fonctionnement .item{
+        margin-left: 20px;
+    }
     #Restaurants{
         display: block;
         width: initial;
+    }
+    #Restaurents .Resto .flex{
+        display: block;
     }
     .Resto{
         display: block;
@@ -154,17 +167,43 @@ footer li{
     header{
         display: block;
     }  
+    header .logo{
+        width: initial;
+        margin-left: 40px;
+    }
+    header .nav{
+        background-color: #F2F2F2;
+        justify-content: center;
+    }
     #Accueil{
         display: block;
         width: initial;
+    }
+    h1{
+        margin-left: 50px;
+
+    }
+    #Accueil .titre p{
+        margin-left: 50px;
+
+    }
+    button{
+        margin-left: 110px;
+        margin-bottom: 20px;
     }
     #Fonctionnement{
         display: block;
         width: initial;
     }
+    #Fonctionnement .flex{
+        display: block;
+    }
     #Restaurants{
         display: block;
         width: initial;
+    }
+    #Restaurents .flex .content{
+        display: block;
     }
     .Resto{
         display: block;
