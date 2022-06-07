@@ -259,7 +259,7 @@ footer li{
     }  
     header .logo{
         width: initial;
-        margin-left: 40px;
+        margin: 0px;
     }
     header .nav{
         background-color: #F2F2F2;
