@@ -2,18 +2,24 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 /* header*/
-header{
-    display: flex;
-    justify-content: space-between;
-}
 header i{
     padding-top: 16px;
     margin-right: 15px
 }
+header .logo{
+    margin-left: 450px;
+}
+header .images img{
+    width: 100%;
+}
 .nav{
     display: flex;
+    margin-left: 550px;
 }
 /*Acceuil*/
+.titre{
+    margin-left: 400px;
+}
 button{
     height: 30px;
     border-bottom-right-radius: 15px;
@@ -22,13 +28,16 @@ button{
     border-bottom-left-radius: 15px;
     border: none;
     color: white;
+    margin-left: 550px;
     background: linear-gradient(#FF79DA,#9356DC)
-}
+    }
+
+    
 /*Fonctionnement*/
 #Fonctionnement .item{
     display: flex;
     background-color: white;
-    box-shadow: 0 0 6px #0000002e;;
+    box-shadow: 0 0 6px #0000002e;
     width: 400px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -70,6 +79,7 @@ button{
 }
 .Resto{
     width: 100%;
+    display: flex;
 }
 .Resto img{
     width: 100%;
@@ -77,6 +87,7 @@ button{
     border-top-left-radius: 11px;
     margin-top: 1px;
     object-fit: cover;
+    height: 250px;
 }
 .Resto a{
     margin-right: 15px;
@@ -88,8 +99,10 @@ button{
     margin-bottom: 10px;
     margin-top: 5px;
 }
-.Resto i:hover{
-    color: #FF79DA;
+.Resto i{
+    color:#9356DC;
+    cursor: pointer;
+    transition: transform 400ms;
 }
 .flex{
     display: flex;
@@ -185,11 +198,33 @@ footer li{
     }
     header .logo{
         width: initial;
-        margin-left: 40px;
+        margin-left: 240px;
+    }
+    header .logo img{
+        height: 30px;
+        margin-left: 70px;
+    }
+    header .nav{
+        margin-left: 300px;
+    }
+    .titre{
+        margin-left: 200px;
+    }
+    header .logo i{
+        color: grey;
+    }
+    header .images img{
+        width: 100%;
     }
     #Accueil{
-        display: block;
-        width: initial;
+        width: 100px;
+    }
+    button{
+        margin-left: 320px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 120px;
+        height: 30px;
     }
     #Fonctionnement{
         display: block;
@@ -229,14 +264,30 @@ footer li{
     header .nav{
         background-color: #F2F2F2;
         justify-content: center;
+        margin: 0px;
+    }
+    header .logo img{
+        height: 30px;
+        margin-left: 70px;
+    }
+    header .images img{
+        width: 100%;
+    }
+    header .logo i{
+        color: grey;
     }
     #Accueil{
-        display: block;
-        width: initial;
+        width: 100px;
+    }
+    .titre{
+        width: 100%;
+        margin: 0px;
     }
     h1{
         margin-left: 50px;
-
+    }
+    .titre p{
+        margin-left: 50px;
     }
     #Accueil .titre p{
         margin-left: 50px;
@@ -245,6 +296,9 @@ footer li{
     button{
         margin-left: 110px;
         margin-bottom: 20px;
+        margin-top: 20px;
+        width: 120px;
+        height: 30px;
     }
     #Fonctionnement{
         display: block;
