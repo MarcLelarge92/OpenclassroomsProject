@@ -7,18 +7,18 @@ header i{
     margin-right: 15px
 }
 header .logo{
-    margin-left: 450px;
+   text-align: center;
 }
 header .images img{
     width: 100%;
 }
 .nav{
     display: flex;
-    margin-left: 550px;
+    justify-content: center;
 }
 /*Acceuil*/
 .titre{
-    margin-left: 400px;
+    text-align: center;
 }
 button{
     height: 30px;
@@ -28,7 +28,7 @@ button{
     border-bottom-left-radius: 15px;
     border: none;
     color: white;
-    margin-left: 550px;
+    margin-left: 600px;
     background: linear-gradient(#FF79DA,#9356DC)
     }
 
@@ -92,6 +92,7 @@ button{
 .Resto a{
     margin-right: 15px;
     text-decoration: none;
+    width: 25%;
 }
 .Resto p,h3,i{
     color: black;
@@ -103,6 +104,18 @@ button{
     color:#9356DC;
     cursor: pointer;
     transition: transform 400ms;
+}
+.Resto i.fas{
+    position: absolute;
+    margin-left: 288px;
+    opacity: 0;
+}
+.Resto i.far{
+    position: relative;
+    margin-right: 15px;
+}
+.Resto i.fas:hover{
+    opacity: 1;
 }
 .flex{
     display: flex;
@@ -136,6 +149,20 @@ footer li{
     color: white;
 }
 /*Menu*/
+.cards i{
+    color:#9356DC;
+    cursor: pointer;
+    transition: transform 400ms;
+}
+.cards i.fas{
+    position: absolute;
+    margin-left: 288px;
+    opacity: 0;
+}
+.cards i.far{
+    position: relative;
+    margin-right: 15px;
+}
 #Entrée a{
     text-decoration: none;
 }
@@ -268,7 +295,6 @@ footer li{
     }
     header .logo img{
         height: 30px;
-        margin-left: 70px;
     }
     header .images img{
         width: 100%;
@@ -283,18 +309,8 @@ footer li{
         width: 100%;
         margin: 0px;
     }
-    h1{
-        margin-left: 50px;
-    }
-    .titre p{
-        margin-left: 50px;
-    }
-    #Accueil .titre p{
-        margin-left: 50px;
-
-    }
     button{
-        margin-left: 110px;
+        margin-left: 140px;
         margin-bottom: 20px;
         margin-top: 20px;
         width: 120px;
