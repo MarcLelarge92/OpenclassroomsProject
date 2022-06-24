@@ -149,6 +149,10 @@ footer li{
     color: white;
 }
 /*Menu*/
+.cards{
+    justify-content: space-between;
+    display: flex;
+}
 .cards i{
     color:#9356DC;
     cursor: pointer;
@@ -156,12 +160,29 @@ footer li{
 }
 .cards i.fas{
     position: absolute;
-    margin-left: 288px;
+    margin-left: 1303px;
     opacity: 0;
 }
 .cards i.far{
     position: relative;
     margin-right: 15px;
+}
+.cards i.fas:hover{
+    opacity: 1;
+}
+.anims{
+    display: none;
+}
+.content.anims :hover{
+    transition-timing-function: step-start;
+    animation-direction: reverse;
+    width: 20px;
+    height: 25px;
+}
+@keyframes anims{
+    from{
+        background-color: #99E2D0
+    }
 }
 #Entrée a{
     text-decoration: none;
@@ -169,6 +190,7 @@ footer li{
 #Entrée .content{
     background-color: white;
     box-shadow: 0 0 6px #0000002e;
+    margin-bottom: 15px;
 }
 #Entrée h1{
     border-bottom: 3px solid #99E2D0;
@@ -191,6 +213,7 @@ footer li{
 #Plat .content{
     background-color: white;
     box-shadow: 0 0 6px #0000002e;
+    margin-bottom: 15px;
 }
 #Plat h3{
     color: black;
@@ -216,6 +239,7 @@ footer li{
 #Dessert .content{
     background-color: white;
     box-shadow: 0 0 6px #0000002e;
+    margin-bottom: 15px;
 }
 /*media queries*/
 /*tablettes*/
@@ -225,20 +249,12 @@ footer li{
     }
     header .logo{
         width: initial;
-        margin-left: 240px;
     }
     header .logo img{
         height: 30px;
-        margin-left: 70px;
-    }
-    header .nav{
-        margin-left: 300px;
-    }
-    .titre{
-        margin-left: 200px;
     }
     header .logo i{
-        color: grey;
+        color: black;
     }
     header .images img{
         width: 100%;
@@ -310,7 +326,7 @@ footer li{
         margin: 0px;
     }
     button{
-        margin-left: 140px;
+        margin-left: 320px;
         margin-bottom: 20px;
         margin-top: 20px;
         width: 120px;
