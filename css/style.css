@@ -28,7 +28,6 @@ button{
     border-bottom-left-radius: 15px;
     border: none;
     color: white;
-    margin-left: 600px;
     background: linear-gradient(#FF79DA,#9356DC)
     }
 
@@ -94,20 +93,20 @@ button{
     text-decoration: none;
     width: 25%;
 }
-.Resto p,h3,i{
+.Resto p,h3{
     color: black;
     margin-left: 10px;
     margin-bottom: 10px;
     margin-top: 5px;
 }
 .Resto i{
-    color:#9356DC;
     cursor: pointer;
     transition: transform 400ms;
+    border-color: linear-gradient(#FF79DA,#9356DC);
 }
 .Resto i.fas{
     position: absolute;
-    margin-left: 288px;
+    margin-left: 287px;
     opacity: 0;
 }
 .Resto i.far{
@@ -116,6 +115,7 @@ button{
 }
 .Resto i.fas:hover{
     opacity: 1;
+    color: linear-gradient(#FF79DA,#9356DC);
 }
 .flex{
     display: flex;
@@ -149,6 +149,10 @@ footer li{
     color: white;
 }
 /*Menu*/
+header .images img{
+    height: 400px;
+    overflow: hidden;
+}
 .cards{
     justify-content: space-between;
     display: flex;
@@ -160,7 +164,7 @@ footer li{
 }
 .cards i.fas{
     position: absolute;
-    margin-left: 1303px;
+    right: 15px;
     opacity: 0;
 }
 .cards i.far{
@@ -170,38 +174,56 @@ footer li{
 .cards i.fas:hover{
     opacity: 1;
 }
-.anims{
-    display: none;
-}
-.content.anims :hover{
-    transition-timing-function: step-start;
-    animation-direction: reverse;
-    width: 20px;
-    height: 25px;
-}
-@keyframes anims{
-    from{
-        background-color: #99E2D0
-    }
-}
-#Entrée a{
+#Entree a{
     text-decoration: none;
 }
-#Entrée .content{
+#Entree .content{
     background-color: white;
     box-shadow: 0 0 6px #0000002e;
     margin-bottom: 15px;
 }
-#Entrée h1{
+#Entree h1{
     border-bottom: 3px solid #99E2D0;
     width: 50px;
 }
-#Entrée h3{
+#Entree h3{
     color: black;
 }
-#Entrée p{
+#Entree p{
     color: black;
     margin-left: 10px;
+}
+#Entree .flex:hover .anims{
+    display: flex;
+    background-color: #99E2D0;
+    height: 80px;
+    width: 80px;
+    animation-direction: reverse;
+    animation-duration: 2s;
+}
+.anims{
+    display: none;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    animation-iteration-count: 1;
+    animation-timing-function: step-end;
+    animation-fill-mode: forwards;
+}
+.anims i{
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    animation: rollin
+}
+.anims{
+    @keyframes{
+        from {
+            margin-left: 100%;
+        }
+        to {
+            margin-left: 80%;
+        }
+    }
 }
 #Plat a{
     text-decoration: none;
@@ -222,6 +244,10 @@ footer li{
     color: black;
     margin-left: 10px;
 }
+#Plat .flex:hover .anims{
+    display: flex;
+    background-color: #99E2D0;
+}
 #Dessert a{
     text-decoration: none;
 }
@@ -240,6 +266,13 @@ footer li{
     background-color: white;
     box-shadow: 0 0 6px #0000002e;
     margin-bottom: 15px;
+}
+#Dessert .flex:hover .anims{
+    display: flex;
+    background-color: #99E2D0;
+}
+.but{
+    text-align: center;
 }
 /*media queries*/
 /*tablettes*/
@@ -263,7 +296,6 @@ footer li{
         width: 100px;
     }
     button{
-        margin-left: 320px;
         margin-bottom: 20px;
         margin-top: 20px;
         width: 120px;
@@ -326,7 +358,6 @@ footer li{
         margin: 0px;
     }
     button{
-        margin-left: 320px;
         margin-bottom: 20px;
         margin-top: 20px;
         width: 120px;
