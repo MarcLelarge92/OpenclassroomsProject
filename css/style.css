@@ -102,7 +102,6 @@ button{
 .Resto i{
     cursor: pointer;
     transition: transform 400ms;
-    border-color: linear-gradient(#FF79DA,#9356DC);
 }
 .Resto i.fas{
     position: absolute;
@@ -115,7 +114,6 @@ button{
 }
 .Resto i.fas:hover{
     opacity: 1;
-    color: linear-gradient(#FF79DA,#9356DC);
 }
 .flex{
     display: flex;
@@ -166,6 +164,7 @@ header .images {
     position: absolute;
     right: 15px;
     opacity: 0;
+
 }
 .cards i.far{
     position: relative;
@@ -201,8 +200,7 @@ header .images {
     height: 59px;
     width: 59px;
     margin-top:-33px;
-    animation-direction: reverse;
-    animation-duration: 2s;
+    animation: scale-up-hor-right 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) backwards;
 }
 .anims{
     display: none;
@@ -216,7 +214,7 @@ header .images {
     text-align: center;
     margin-left: 23px;
     margin-top: 23px;
-    animation: rollin
+    animation: rotate-90-ccw 0.5s cubic-bezier(0.950, 0.050, 0.795, 0.035) forwards;
 }
 #Plat a{
     text-decoration: none;
@@ -240,6 +238,7 @@ header .images {
 #Plat .flex:hover .anims{
     display: flex;
     background-color: #99E2D0;
+    animation: scale-up-hor-right 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) backwards;
 }
 #Dessert a{
     text-decoration: none;
