@@ -149,7 +149,7 @@ footer li{
     color: white;
 }
 /*Menu*/
-header .images img{
+header .images {
     height: 400px;
     overflow: hidden;
 }
@@ -181,6 +181,7 @@ header .images img{
     background-color: white;
     box-shadow: 0 0 6px #0000002e;
     margin-bottom: 15px;
+    height: 60px;
 }
 #Entree h1{
     border-bottom: 3px solid #99E2D0;
@@ -192,12 +193,14 @@ header .images img{
 #Entree p{
     color: black;
     margin-left: 10px;
+    margin-top: 2px;
 }
 #Entree .flex:hover .anims{
     display: flex;
     background-color: #99E2D0;
-    height: 80px;
-    width: 80px;
+    height: 59px;
+    width: 59px;
+    margin-top:-33px;
     animation-direction: reverse;
     animation-duration: 2s;
 }
@@ -211,19 +214,9 @@ header .images img{
 }
 .anims i{
     text-align: center;
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-left: 23px;
+    margin-top: 23px;
     animation: rollin
-}
-.anims{
-    @keyframes{
-        from {
-            margin-left: 100%;
-        }
-        to {
-            margin-left: 80%;
-        }
-    }
 }
 #Plat a{
     text-decoration: none;
