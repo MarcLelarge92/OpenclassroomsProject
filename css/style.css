@@ -225,7 +225,7 @@ header .images {
 #Entree .flex:hover .anims{
     display: flex;
     background-color: #99E2D0;
-    height: 59px;
+    height: 60px;
     width: 59px;
     margin-top:-33px;
     animation: scale-up-hor-right 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) backwards;
@@ -271,6 +271,9 @@ header .images {
 #Plat .flex:hover .anims{
     display: flex;
     background-color: #99E2D0;
+    height: 60px;
+    width: 59px;
+    margin-top:-33px;
     animation: scale-up-hor-right 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) backwards;
 }
 #Dessert{
@@ -300,6 +303,9 @@ header .images {
 #Dessert .flex:hover .anims{
     display: flex;
     background-color: #99E2D0;
+    height: 60px;
+    width: 59px;
+    margin-top:-33px;
 }
 .but{
     text-align: center;
