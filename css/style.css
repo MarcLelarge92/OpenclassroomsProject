@@ -17,11 +17,12 @@ header .images img{
     text-align: center;
 }
 button{
-    height: 30px;
-    border-bottom-right-radius: 15px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    height: 51px;
+    width: 270px;
+    border-bottom-right-radius: 26px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border-bottom-left-radius: 26px;
     border: none;
     color: white;
     background: linear-gradient(#FF79DA,#9356DC)
@@ -61,7 +62,9 @@ button{
     background-color: #9356DC;
     color: white;
     width: 19px;
+    height: 22px;
     margin-left: -6px;
+    padding-left: 6px;
 }
 #Fonctionnement a{
     display: flex;
@@ -71,6 +74,7 @@ button{
 #Restaurants{
     background-color:  #F2F2F2;
     width: 100%;
+    padding-bottom: 40px;
 }
 .Resto{
     width: 100%;
@@ -103,6 +107,10 @@ button{
     position: absolute;
     margin-left: 287px;
     opacity: 0;
+    color: transparent;
+    background-image: linear-gradient(#9356DC,#FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 .Resto i.far{
     position: relative;
@@ -117,6 +125,10 @@ button{
 }
 .content{
     background-color: white;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
 }
 /* footer */
 footer{
@@ -124,7 +136,8 @@ footer{
 }
 footer h3{
     color: white;
-    margin-left: 48px;
+    margin-left: 39px;
+    padding-top: 14px;
 }
 footer ul{
     list-style-type: none;
@@ -133,6 +146,7 @@ footer a{
     display: flex;
     color: white;
     text-decoration: none;
+    padding-bottom: 10px;
 }
 footer i{
     color: white;
@@ -153,14 +167,25 @@ header .images {
 .cards{
     justify-content: space-between;
     display: flex;
+    margin-top: -30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #F2F2F2;
+    margin-bottom: -22px;
+    position: relative;
 }
 .cards i{
-    color:#9356DC;
+    color: transparent;
+    background-image: linear-gradient(#9356DC,#FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
     cursor: pointer;
     transition: transform 400ms;
+    position: absolute;
+    padding-top: 25px;
+    padding-right: 10px;
 }
 .cards i.fas{
-    position: absolute;
     right: 15px;
     opacity: 0;
 
@@ -171,6 +196,10 @@ header .images {
 }
 .cards i.fas:hover{
     opacity: 1;
+}
+#Entree{
+    background-color: #F2F2F2;
+    margin-bottom: -20px;
 }
 #Entree a{
     text-decoration: none;
@@ -215,6 +244,10 @@ header .images {
     margin-top: 23px;
     animation: rotate-90-ccw 0.5s cubic-bezier(0.950, 0.050, 0.795, 0.035) forwards;
 }
+#Plat{
+    background-color: #F2F2F2;
+    margin-bottom: -20px;
+}
 #Plat a{
     text-decoration: none;
 }
@@ -226,6 +259,7 @@ header .images {
     background-color: white;
     box-shadow: 0 0 6px #0000002e;
     margin-bottom: 15px;
+    height: 74px;
 }
 #Plat h3{
     color: black;
@@ -238,6 +272,10 @@ header .images {
     display: flex;
     background-color: #99E2D0;
     animation: scale-up-hor-right 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) backwards;
+}
+#Dessert{
+    background-color: #F2F2F2;
+    margin-bottom: -20px;
 }
 #Dessert a{
     text-decoration: none;
@@ -257,6 +295,7 @@ header .images {
     background-color: white;
     box-shadow: 0 0 6px #0000002e;
     margin-bottom: 15px;
+    height: 74px;
 }
 #Dessert .flex:hover .anims{
     display: flex;
@@ -264,6 +303,9 @@ header .images {
 }
 .but{
     text-align: center;
+    background-color: #F2F2F2;
+    height: 74px;
+    padding-top: 38px;
 }
 /*media queries*/
 /*tablettes*/
