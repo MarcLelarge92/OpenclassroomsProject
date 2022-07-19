@@ -238,22 +238,18 @@ header .images {
     height: 60px;
     width: 59px;
     margin-top:-33px;
-    animation: moveToLeft 4s ease-in-out;
-    animation-delay: 200ms;
+    animation-duration: 1s;
+    animation-name: slidein;
 }
-@keyframes moveToLeft {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(300px);
-    }
-}
+
 .anims{
     display: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .anims i{
     text-align: center;
+    color: white;
     margin-left: 23px;
     margin-top: 23px;
     animation: rotation 1.5s
@@ -302,18 +298,18 @@ header .images {
     height: 60px;
     width: 59px;
     margin-top:-33px;
-    animation-duration: 5s;
+    animation-duration: 1s;
     animation-name: slidein;
 }
-@-moz-keyframes slidein{
+@keyframes slidein{
     from{
-        margin-left : 100%;
-        width : 100%;
+        margin-left : 0%;
+        width : 0%;
     }
 
     to{
-        margin-left : 0%;
-        width : 100%;
+        margin-left : 4.5%;
+        width : 4.5%;
     }
 }
 #Dessert{
@@ -341,10 +337,6 @@ header .images {
     margin-bottom: 15px;
     height: 60px;
     animation: fadeIn 5s;
-    -webkit-animation: fadeIn 7s;
-    -moz-animation: fadeIn 7s;
-    -o-animation: fadeIn 7s;
-    -ms-animation: fadeIn 7s;
 }
 #Dessert .flex:hover .anims{
     display: flex;
@@ -352,6 +344,8 @@ header .images {
     height: 60px;
     width: 59px;
     margin-top:-33px;
+    animation-duration: 1s;
+    animation-name: slidein;
 }
 .but{
     text-align: center;
