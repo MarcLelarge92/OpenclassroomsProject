@@ -105,7 +105,7 @@ button{
 }
 .Resto i.fas{
     position: absolute;
-    margin-left: 287px;
+    right: 15px;
     opacity: 0;
     color: transparent;
     background-image: linear-gradient(#9356DC,#FF79DA);
@@ -122,6 +122,7 @@ button{
 .flex{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .content{
     background-color: white;
@@ -132,7 +133,7 @@ button{
 }
 /* footer */
 footer{
-    background-color: black;
+    background-color: dimgray;
 }
 footer h3{
     color: white;
@@ -209,7 +210,16 @@ header .images {
     box-shadow: 0 0 6px #0000002e;
     margin-bottom: 15px;
     height: 60px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 7s;
+    -moz-animation: fadeIn 7s;
+    -o-animation: fadeIn 7s;
+    -ms-animation: fadeIn 7s;
 }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 #Entree h1{
     border-bottom: 3px solid #99E2D0;
     width: 50px;
@@ -228,21 +238,33 @@ header .images {
     height: 60px;
     width: 59px;
     margin-top:-33px;
-    animation: scale-up-hor-right 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) backwards;
+    animation: moveToLeft 4s ease-in-out;
+    animation-delay: 200ms;
+}
+@keyframes moveToLeft {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(300px);
+    }
 }
 .anims{
     display: none;
-    animation-duration: 1s;
-    animation-direction: reverse;
-    animation-iteration-count: 1;
-    animation-timing-function: step-end;
-    animation-fill-mode: forwards;
 }
 .anims i{
     text-align: center;
     margin-left: 23px;
     margin-top: 23px;
-    animation: rotate-90-ccw 0.5s cubic-bezier(0.950, 0.050, 0.795, 0.035) forwards;
+    animation: rotation 1.5s
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 #Plat{
     background-color: #F2F2F2;
@@ -259,7 +281,12 @@ header .images {
     background-color: white;
     box-shadow: 0 0 6px #0000002e;
     margin-bottom: 15px;
-    height: 74px;
+    height: 60px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 7s;
+    -moz-animation: fadeIn 7s;
+    -o-animation: fadeIn 7s;
+    -ms-animation: fadeIn 7s;
 }
 #Plat h3{
     color: black;
@@ -267,6 +294,7 @@ header .images {
 #Plat p{
     color: black;
     margin-left: 10px;
+    margin-top: 2px;
 }
 #Plat .flex:hover .anims{
     display: flex;
@@ -274,7 +302,19 @@ header .images {
     height: 60px;
     width: 59px;
     margin-top:-33px;
-    animation: scale-up-hor-right 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) backwards;
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+@-moz-keyframes slidein{
+    from{
+        margin-left : 100%;
+        width : 100%;
+    }
+
+    to{
+        margin-left : 0%;
+        width : 100%;
+    }
 }
 #Dessert{
     background-color: #F2F2F2;
@@ -293,12 +333,18 @@ header .images {
 #Dessert p{
     color: black;
     margin-left: 10px;
+    margin-top: 2px;
 }
 #Dessert .content{
     background-color: white;
     box-shadow: 0 0 6px #0000002e;
     margin-bottom: 15px;
-    height: 74px;
+    height: 60px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 7s;
+    -moz-animation: fadeIn 7s;
+    -o-animation: fadeIn 7s;
+    -ms-animation: fadeIn 7s;
 }
 #Dessert .flex:hover .anims{
     display: flex;
@@ -401,8 +447,8 @@ header .images {
     button{
         margin-bottom: 20px;
         margin-top: 20px;
-        width: 120px;
-        height: 30px;
+        width: 210px;
+        height: 43px;
     }
     #Fonctionnement{
         display: block;
