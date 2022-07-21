@@ -269,6 +269,7 @@ header .images {
 }
 .prix{
     margin-left: auto;
+    text-align: right;
 }
 .anims{
     display: none;
