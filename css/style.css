@@ -245,10 +245,6 @@ header .images {
     50% { opacity: 0.5; }
     100% { opacity: 1; }
   }
-.prix{
-position: absolute;
-right: 75px;
-}
 #Entree h1{
     border-bottom: 3px solid #99E2D0;
     width: 50px;
@@ -271,11 +267,13 @@ right: 75px;
     animation-duration: 1s;
     animation-name: slidein;
 }
-
+.prix{
+    margin-left: auto;
+}
 .anims{
     display: none;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 .anims i{
     text-align: center;
@@ -283,14 +281,14 @@ right: 75px;
     font-size: 26px;
     margin-left: 15px;
     margin-top: 17px;
-    animation: rotation 1.5s
+    animation: quarterspin 0.5s ease-in-out
 }
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
+@keyframes quarterspin {
+    0%{
+        transform: rotate(-270deg);
     }
-    to {
-        transform: rotate(360deg);
+    100%{
+        transform: rotate(0);
     }
 }
 #Plat{
@@ -336,8 +334,8 @@ right: 75px;
     }
 
     to{
-        margin-left : 4.4%;
-        width : 4.4%;
+        margin-left : 5.4%;
+        width : 5.4%;
     }
 }
 #Dessert{
@@ -507,27 +505,22 @@ right: 75px;
         display: block;
         width: initial;
     }
-    #Entree .flex:hover .anims{
-        display: flex;
-        background-color: #99E2D0;
-        height: 60px;
-        width: 59px;
-        margin-top:-33px;
-        animation-duration: 1s;
-        animation-name: slidein;
+    .prix{
+        margin-left: auto;
+        align-items: flex-end;
     }
     @keyframes slidein{
         from{
             margin-left : 0%;
             width : 0%;
         }
-    
+
         to{
-            margin-left : 12.5%;
-            width : 12.5%;
+            margin-left : 11%;
+            width : 11%;
         }
     }
-    .flex p{
+    .flex:hover p{
         width: 175px;
         text-overflow: ellipsis;
         overflow: hidden;
