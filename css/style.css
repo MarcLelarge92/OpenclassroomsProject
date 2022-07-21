@@ -1,6 +1,25 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+/*loader*/
+.loader{
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color:#ffffff;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: disappear 200ms forwards;
+    animation-delay: 3s;
+    transform-origin: top;
+ }
+ @keyframes disappear{
+    to{
+        transform: scale(0);
+    }
+ }
 /* header*/
 header .logo{
    text-align: center;
@@ -158,12 +177,21 @@ footer li{
     color: white;
 }
 /*Menu*/
-header i{
-    font-size: 40px;
+header  a i{
+    left: 25px;
+    position: absolute;
+    color: black;
+    padding-top: 16px;
+    font-size: 33px;
 }
 header .images {
     height: 400px;
     overflow: hidden;
+}
+.nav i{
+    font-size: 23px;
+    padding-top: 10px;
+    padding-right: 10px;
 }
 .cards{
     justify-content: space-between;
@@ -208,21 +236,23 @@ header .images {
 #Entree .content{
     background-color: white;
     box-shadow: 0 0 6px #0000002e;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     height: 60px;
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 7s;
-    -moz-animation: fadeIn 7s;
-    -o-animation: fadeIn 7s;
-    -ms-animation: fadeIn 7s;
+    animation: fadeIn 3s;
 }
 @keyframes fadeIn {
     0% { opacity: 0; }
+    50% { opacity: 0.5; }
     100% { opacity: 1; }
   }
+.prix{
+position: absolute;
+right: 75px;
+}
 #Entree h1{
     border-bottom: 3px solid #99E2D0;
     width: 50px;
+    margin-bottom: 20px;
 }
 #Entree h3{
     color: black;
@@ -250,8 +280,9 @@ header .images {
 .anims i{
     text-align: center;
     color: white;
-    margin-left: 23px;
-    margin-top: 23px;
+    font-size: 26px;
+    margin-left: 15px;
+    margin-top: 17px;
     animation: rotation 1.5s
 }
 @keyframes rotation {
@@ -272,17 +303,14 @@ header .images {
 #Plat h1{
     border-bottom: 3px solid #99E2D0;
     width: 50px;
+    padding-top: 20px;
 }
 #Plat .content{
     background-color: white;
     box-shadow: 0 0 6px #0000002e;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     height: 60px;
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 7s;
-    -moz-animation: fadeIn 7s;
-    -o-animation: fadeIn 7s;
-    -ms-animation: fadeIn 7s;
+    animation: fadeIn 4s;
 }
 #Plat h3{
     color: black;
@@ -308,8 +336,8 @@ header .images {
     }
 
     to{
-        margin-left : 4.5%;
-        width : 4.5%;
+        margin-left : 4.4%;
+        width : 4.4%;
     }
 }
 #Dessert{
@@ -322,6 +350,7 @@ header .images {
 #Dessert h1{
     border-bottom: 3px solid #99E2D0;
     width: 50px;
+    padding-top: 20px;
 }
 #Dessert h3{
     color: black;
@@ -334,7 +363,7 @@ header .images {
 #Dessert .content{
     background-color: white;
     box-shadow: 0 0 6px #0000002e;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     height: 60px;
     animation: fadeIn 5s;
 }
@@ -374,11 +403,11 @@ header .images {
     #Accueil{
         width: 100px;
     }
-    button{
-        margin-bottom: 20px;
+    button{   
+         margin-bottom: 20px;
         margin-top: 20px;
-        width: 120px;
-        height: 30px;
+        width: 210px;
+        height: 43px;
     }
     #Fonctionnement{
         display: block;
@@ -400,6 +429,17 @@ header .images {
     .Resto{
         display: block;
         width: initial;
+    }
+    @keyframes slidein{
+        from{
+            margin-left : 0%;
+            width : 0%;
+        }
+    
+        to{
+            margin-left : 7%;
+            width : 7%;
+        }
     }
     footer{
         display: block;
@@ -427,7 +467,8 @@ header .images {
         height: 247px;
     }
     header .logo i{
-        color: grey;
+        color: black;
+        font-size: 19px;
     }
     #Acceuil{
         background-color: #F2F2F2;
@@ -461,6 +502,32 @@ header .images {
     .Resto{
         display: block;
         width: initial;
+    }
+    #Entree .flex:hover .anims{
+        display: flex;
+        background-color: #99E2D0;
+        height: 60px;
+        width: 59px;
+        margin-top:-33px;
+        animation-duration: 1s;
+        animation-name: slidein;
+    }
+    @keyframes slidein{
+        from{
+            margin-left : 0%;
+            width : 0%;
+        }
+    
+        to{
+            margin-left : 12.5%;
+            width : 12.5%;
+        }
+    }
+    .flex p{
+        width: 175px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     footer{
         display: block;
