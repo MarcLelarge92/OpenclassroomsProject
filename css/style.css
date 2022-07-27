@@ -53,13 +53,13 @@ button{
     display: flex;
     background-color: white;
     box-shadow: 0 0 6px #0000002e;
-    width: 400px;
+    width: 85%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 50px;
-    margin-bottom: 15px;
+    margin: 35px;
 }
 #Fonctionnement .item:hover{
     color: #9356DC;
@@ -74,16 +74,14 @@ button{
     color: black;
 }
 #Fonctionnement .numbers p{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     background-color: #9356DC;
     color: white;
     width: 19px;
-    height: 22px;
-    margin-left: -6px;
-    padding-left: 6px;
+    height: 24px;
+    margin-left: -9px;
+    padding-left: 9px;
+    border-radius: 20px;
+    padding-top: 4px;
 }
 #Fonctionnement a{
     display: flex;
@@ -231,13 +229,17 @@ header .images {
 }
 #Entree a{
     text-decoration: none;
+    display: flex;
+    width: 96%;
+    flex-direction: column;
+    margin-left: 2%;
 }
 #Entree .content{
     background-color: white;
     box-shadow: 0 0 6px #0000002e;
     margin-bottom: 20px;
     height: 60px;
-    animation: fadeIn 3s;
+    animation: fadeIn 6s;
 }
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -254,21 +256,22 @@ header .images {
 }
 #Entree p{
     color: black;
-    margin-left: 10px;
-    margin-top: 2px;
+    margin-left: 9px;
+    margin-top: -6px;
 }
 #Entree .flex:hover .anims{
     display: flex;
     background-color: #99E2D0;
     height: 60px;
     width: 59px;
-    margin-top:-33px;
+    margin-top:-38px;
     animation-duration: 1s;
     animation-name: slidein;
 }
 .prix{
     margin-left: auto;
     text-align: right;
+    padding-right: 10px;
 }
 .anims{
     display: none;
@@ -285,7 +288,7 @@ header .images {
 }
 @keyframes quarterspin {
     0%{
-        transform: rotate(-270deg);
+        transform: rotate(-360deg);
     }
     100%{
         transform: rotate(0);
@@ -297,6 +300,10 @@ header .images {
 }
 #Plat a{
     text-decoration: none;
+    display: flex;
+    width: 96%;
+    flex-direction: column;
+    margin-left: 2%;
 }
 #Plat h1{
     border-bottom: 3px solid #99E2D0;
@@ -315,15 +322,15 @@ header .images {
 }
 #Plat p{
     color: black;
-    margin-left: 10px;
-    margin-top: 2px;
+    margin-left: 9px;
+    margin-top: -6px;
 }
 #Plat .flex:hover .anims{
     display: flex;
     background-color: #99E2D0;
     height: 60px;
     width: 59px;
-    margin-top:-33px;
+    margin-top:-38px;
     animation-duration: 1s;
     animation-name: slidein;
 }
@@ -334,8 +341,8 @@ header .images {
     }
 
     to{
-        margin-left : 5.4%;
-        width : 5.4%;
+        margin-left : 4.6%;
+        width : 4.6%;
     }
 }
 #Dessert{
@@ -344,6 +351,10 @@ header .images {
 }
 #Dessert a{
     text-decoration: none;
+    display: flex;
+    width: 96%;
+    flex-direction: column;
+    margin-left: 2%;
 }
 #Dessert h1{
     border-bottom: 3px solid #99E2D0;
@@ -355,8 +366,8 @@ header .images {
 }
 #Dessert p{
     color: black;
-    margin-left: 10px;
-    margin-top: 2px;
+    margin-left: 9px;
+    margin-top: -6px;
 }
 #Dessert .content{
     background-color: white;
@@ -370,7 +381,7 @@ header .images {
     background-color: #99E2D0;
     height: 60px;
     width: 59px;
-    margin-top:-33px;
+    margin-top:-38px;
     animation-duration: 1s;
     animation-name: slidein;
 }
@@ -383,6 +394,9 @@ header .images {
 /*media queries*/
 /*tablettes*/
 @media all and (min-width: 768px) and (max-width: 992px){
+    body{
+        margin: 0px;
+    }
     header{
         display: block;
     }
@@ -447,6 +461,9 @@ header .images {
 }
 /*telephone*/
 @media screen and (max-width:768px){
+    body{
+        margin: 0px;
+    }
     header{
         display: block;
     }  
@@ -455,7 +472,7 @@ header .images {
         margin: 0px;
     }
     header .nav{
-        background-color: #F2F2F2;
+        background-color: lightgrey;
         justify-content: center;
         margin: 0px;
     }
@@ -472,7 +489,6 @@ header .images {
     }
     #Acceuil{
         background-color: #F2F2F2;
-        margin-top: -21px;
         margin-bottom: 16px;
     }
     .titre{
@@ -517,8 +533,8 @@ header .images {
         }
 
         to{
-            margin-left : 11%;
-            width : 11%;
+            margin-left : 17%;
+            width : 17%;
         }
     }
     .flex:hover p{
