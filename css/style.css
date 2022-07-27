@@ -469,6 +469,7 @@ header .images {
     header .logo i{
         color: black;
         font-size: 19px;
+        padding-top: 6px;
     }
     #Acceuil{
         background-color: #F2F2F2;
