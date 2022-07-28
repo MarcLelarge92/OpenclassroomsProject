@@ -200,6 +200,11 @@ header .images {
     margin-bottom: -22px;
     position: relative;
 }
+.cards h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 20px;
+    margin-left: 15px;
+}
 .cards i{
     color: transparent;
     background-image: linear-gradient(#9356DC,#FF79DA);
@@ -246,10 +251,11 @@ header .images {
     50% { opacity: 0.5; }
     100% { opacity: 1; }
   }
-#Entree h1{
+#Entree h2{
     border-bottom: 3px solid #99E2D0;
     width: 50px;
     margin-bottom: 20px;
+    margin-left: 14px;
 }
 #Entree h3{
     color: black;
@@ -305,10 +311,11 @@ header .images {
     flex-direction: column;
     margin-left: 2%;
 }
-#Plat h1{
+#Plat h2{
     border-bottom: 3px solid #99E2D0;
     width: 50px;
     padding-top: 20px;
+    margin-left: 14px;
 }
 #Plat .content{
     background-color: white;
@@ -356,10 +363,11 @@ header .images {
     flex-direction: column;
     margin-left: 2%;
 }
-#Dessert h1{
+#Dessert h2{
     border-bottom: 3px solid #99E2D0;
     width: 50px;
     padding-top: 20px;
+    margin-left: 14px;
 }
 #Dessert h3{
     color: black;
@@ -408,6 +416,8 @@ header .images {
     }
     header .logo i{
         color: black;
+        font-size: 19px;
+        padding-top: 6px;
     }
     header .images img{
         width: 100%;
@@ -443,6 +453,29 @@ header .images {
         display: block;
         width: initial;
     }
+    .cards h1{
+        font-family: 'Shrikhand', cursive;
+        font-size: 20px;
+        margin-left: 26px;
+    }
+    #Entree h2{
+        border-bottom: 3px solid #99E2D0;
+        width: 50px;
+        margin-bottom: 20px;
+        margin-left: 25px;
+    }
+    #Plat h2{
+        border-bottom: 3px solid #99E2D0;
+        width: 50px;
+        padding-top: 20px;
+        margin-left: 25px;
+    }
+    #Dessert h2{
+        border-bottom: 3px solid #99E2D0;
+        width: 50px;
+        padding-top: 20px;
+        margin-left: 25px;
+    }
     @keyframes slidein{
         from{
             margin-left : 0%;
@@ -451,7 +484,7 @@ header .images {
     
         to{
             margin-left : 0%;
-            width : 6.8%;
+            width : 7.5%;
         }
     }
     footer{
