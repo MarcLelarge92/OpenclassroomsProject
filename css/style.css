@@ -341,7 +341,7 @@ header .images {
     }
 
     to{
-        margin-left : 4.6%;
+        margin-left : 0%;
         width : 4.6%;
     }
 }
@@ -450,8 +450,8 @@ header .images {
         }
     
         to{
-            margin-left : 7%;
-            width : 7%;
+            margin-left : 0%;
+            width : 6.8%;
         }
     }
     footer{
@@ -533,8 +533,8 @@ header .images {
         }
 
         to{
-            margin-left : 17%;
-            width : 17%;
+            margin-left : 0%;
+            width : 13%;
         }
     }
     .flex:hover p{
